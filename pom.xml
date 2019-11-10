@@ -2,25 +2,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.javastreets</groupId>
-	<artifactId>mule-maven-deployment-demo</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
-	<packaging>mule</packaging>
-	<name>Mule mule-maven-deployment-demo Application</name>
 
-	<parent>
-		<groupId>com.javastreets</groupId>
-		<artifactId>mule-maven-parent-pom</artifactId>
-		<version>0.0.5-SNAPSHOT</version>
-		<relativePath>../mule-maven-parent-pom/pom.xml</relativePath>
-	</parent>
+	<groupId>com.mycompany</groupId>
+	<artifactId>one</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>mule-application</packaging>
+
+	<name>one</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<app.runtime>4.2.1</app.runtime>
-		<mule.maven.plugin.version>3.2.7</mule.maven.plugin.version>
+		<app.runtime>4.1.4</app.runtime>
+		<mule.maven.plugin.version>3.1.6</mule.maven.plugin.version>
 	</properties>
 
 	<build>
@@ -28,12 +23,12 @@
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-				<version>3.2.7</version>
+				<version>3.1.6</version>
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
-						<muleVersion>4.2.1</muleVersion>
+						<muleVersion>4.1.4</muleVersion>
 						<username>bykfour</username>
 						<password>Yesh@123</password>
 						<applicationName>one</applicationName>
