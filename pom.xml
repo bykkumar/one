@@ -23,7 +23,7 @@
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-				<version>3.3.2</version>
+				<version>3.2.7</version>
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
@@ -37,11 +37,11 @@
 				</configuration>
 				<executions>
 					<execution>
-					 	<id>deploy</id>
-					 	<phase>deploy</phase>
-					 	<goals>
-					 		<goal>deploy</goal>
-					 	</goals>
+						<id>deploy</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
 					</execution>
 				</executions>
 			</plugin>
@@ -90,4 +90,13 @@
 		</pluginRepository>
 	</pluginRepositories>
 
+	<distributionManagement>
+		<repository>
+			<uniqueVersion>false</uniqueVersion>
+			<id>mulesoft-releases</id>
+			<name>mulesoft release repository</name>
+			<url>https://repository.mulesoft.org/releases/</url>
+			<layout>default</layout>
+		</repository>
+	</distributionManagement>
 </project>
