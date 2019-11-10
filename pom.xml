@@ -64,7 +64,7 @@
 		</dependency>
 	</dependencies>
 
-	<repositories>
+	<!-- <repositories>
 		<repository>
 			<id>anypoint-exchange</id>
 			<name>Anypoint Exchange</name>
@@ -99,4 +99,4 @@
 			<layout>default</layout>
 		</repository>
 	</distributionManagement>
-</project>
+ --></project>
