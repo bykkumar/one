@@ -92,10 +92,10 @@
 
 	<distributionManagement>
 		<repository>
-			<id>mulesoft-public</id>
-			<name>MuleSoft Public Repository</name>
-			<url>https://repository.mulesoft.org/nexus/content/repositories/public/</url>
-			<layout>default</layout>
+			<id>mulesoft-releases</id>
+            <name>mulesoft release repository</name>
+            <layout>default</layout>
+            <url>https://repository.mulesoft.org/releases/</url>
 		</repository>
 	</distributionManagement>
 </project>
